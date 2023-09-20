@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
+    <title>Todo List App</title>
 
+    <!-- Style CSS -->
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
@@ -12,93 +13,23 @@
       <h4>TO-DO LIST</h4>
 
       <div class="form">
-        <input type="text" placeholder="New task" class="form-input" />
-        <button class="form-btn" type="button">ADD</button>
+        <input
+          type="text"
+          id="form-input"
+          placeholder="Input new task"
+          class="form-input"
+        />
+        <button class="form-btn" type="button" onclick="create()">ADD</button>
       </div>
 
       <div class="todo-list">
-        <ul id="list">
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 1
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 2
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 3
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-          <li>
-            <button type="button" class="remove-item">X</button>
-            Javascript 4
-          </li>
-        </ul>
+        <ul id="list"></ul>
       </div>
 
       <div class="footer">
-        <button class="btn-clear" type="button">Clear</button>
+        <button class="btn-clear" type="button" onclick="clearAll()">
+          CLEAR
+        </button>
       </div>
     </div>
 
